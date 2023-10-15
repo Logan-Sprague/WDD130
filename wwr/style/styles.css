@@ -21,7 +21,7 @@ main section img{
   height: 725px;
 }
 body {
-  font-family: 'Orelega One';
+  font-family: 'Orelega One', serif;
   background-color: #f1f1ee;
   font-size: 22px;
   margin: 0;
@@ -42,17 +42,17 @@ nav a:hover {
   text-decoration: underline;
 }
 .home-title {
-  font-family:'Josefin Sans' ;
+  font-family:'Josefin Sans', sans-serif ;
   font-size: 2em;
   background-color: #434a3a;
   color: #f1f1ee;
   margin-top: 10px;
 }
 h1{
-  font-family: 'Josefin Sans';
+  font-family: 'Josefin Sans', sans-serif;
 }
 h2{
-  font-family: 'Josefin Sans';
+  font-family: 'Josefin Sans', sans-serif;
   margin: 0;
 }
 h4 {
