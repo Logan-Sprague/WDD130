@@ -208,15 +208,17 @@ footer .social img{
 }
 .river-grid{
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 50px;
 }
 #river-hero{
 position: relative;
+width:100%;
 }
 #river-hero-box{
-  width: 100%;
+  width: auto;
   z-index: 0;
 }
 #river-hero-msg{
@@ -236,8 +238,6 @@ position: relative;
 .salmon-card{
   grid-column: 2/4;
   grid-row: 1/2;
-  width: 100%;
-  padding: 10px;
   justify-self: center;
   justify-content: center;
   padding:50px;
