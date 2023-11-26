@@ -17,6 +17,7 @@ header{
 }
 nav a{
     color: #986b8b;
+    font-size: 20px;
 }
 nav a:hover{
     color: #301c0f;
@@ -149,9 +150,12 @@ footer>*{
     justify-self: center;
     align-self: center;
     color: #986b8b;
+    font-family: "Josefin Sans";
 }
 footer a{
     color: #986b8b;
+    font-size: 20px;
+    font-family: "Josefin Sans";
 }
 footer a:hover{
     color: #301c0f;
