@@ -19,31 +19,48 @@
       </nav>
     </header>
     <div id="hero">
-        <h1>Home</h1>
+      <h1>Home</h1>
     </div>
     <main class="home-grid">
       <section class="blep">
-        <img src="images/blep.png" alt="blep">
+        <!-- Trigger the Modal -->
+        <img
+          id="myImg"
+          src="images/blep.png"
+          alt="blep"
+          style="width: 100%; max-width: 300px"
+        />
 
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- The Close Button -->
+          <span class="close">&times;</span>
+
+          <!-- Modal Content (The Image) -->
+          <img class="modal-content" id="img01" />
+
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption"></div>
+        </div>
       </section>
       <div class="info">
         <p>
-            This website is dedicated to the life and happenings of James
-            Buchannan Barnes, more commonly known as Bucky. This website will
-            focus on some background on Bucky as well as his funnier behaviors.
-            The website is meant to be comical in nature but all of the stories
-            and photos are real.
-          </p>
+          This website is dedicated to the life and happenings of James
+          Buchannan Barnes, more commonly known as Bucky. This website will
+          focus on some background on Bucky as well as his funnier behaviors.
+          The website is meant to be comical in nature but all of the stories
+          and photos are real.
+        </p>
       </div>
       <section class="pages">
         <img src="images/sitting.png" alt="sitting" />
       </section>
       <div class="pages-info">
         <p>
-            Feel free to browse the bio page as well as the shenanigans page for
-            photos and stories of bucky the cat. Every photo posted will have a
-            description and story behind it.
-          </p>
+          Feel free to browse the bio page as well as the shenanigans page for
+          photos and stories of bucky the cat. Every photo posted will have a
+          description and story behind it.
+        </p>
       </div>
       <section class="links">
         <section class="bio">
@@ -61,5 +78,27 @@
       <p><a href="site-plan.html">Site Plan</a></p>
       <a href="#">Back to Top ^</a>
     </footer>
+    <script>
+      // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+    </script>
   </body>
 </html>
