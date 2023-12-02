@@ -8,11 +8,11 @@ header{
     font-family:"Indie Flower", serif;
     background-color: #301c0f;
     color: #986b8b;
+    width:100%
 }
 
 #logo_link{
     display: flex;
-    grid-template-columns: 1fr 1fr;
     justify-content: space-around;
 }
 nav a{
@@ -75,9 +75,11 @@ h1{
 .pages {
     grid-column: 3/4;
     grid-row: 2/4;
-    place-items: center;
-    border: solid 5px #3F826D ; 
+    place-items: center; 
     margin: 10px; 
+}
+.pages img{
+    border: solid 5px #3F826D;
 }
 .pages-info{
     grid-column: 1/3;
@@ -211,12 +213,49 @@ footer a:hover{
     animation-name: zoom;
     animation-duration: 0.6s;
   }
-  
+
+  .bio-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    }
+    .bio-hero{
+        font-size: 40px;  
+    }
+    .hard-start{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .bucky-fam{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        display: flex;
+        flex-direction: column;
+    }
+    .bio-grid img{
+        border: solid 5px #3F826D ; 
+        margin: 10px;   
+    }
+    .bio-grid h2{
+        font-size: 35px;
+        font-family: "Indie Flower";
+        color: #301c0f;
+        margin: 10px;
+    }
+    .bio-grid p{
+        font-size: 30px;
+        font-family: "josefin Sans", sans-serif;
+        color: #301c0f ;
+        margin: 10px;
+    }
   @keyframes zoom {
     from {transform:scale(0)}
     to {transform:scale(1)}
   }
-  
   /* The Close Button */
   .close {
     position: absolute;
@@ -234,15 +273,62 @@ footer a:hover{
     text-decoration: none;
     cursor: pointer;
   }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px){
 .home-grid{
     display: block;
     height: auto;
 }
-
-nav, footer {
+.bio-grid{
+    display: block;
+    height: auto;
+}
+header{
     display: flex;
     flex-direction: column;
+    height: fit-content;
+    justify-content: space-around;
+}
+
+#logo_link{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+nav a{
+    color: #986b8b;
+    font-size: 20px;
+}
+nav a:hover{
+    color: #301c0f;
+    background-color: #986b8b;
+    border-radius: 10px;
+}
+header h1{
+    grid-column: 2/3;
+    text-align: center;
+}
+#logo_link img{
+padding:5px;
+justify-content:center;
+align-self: center;
+}
+header nav{
+    grid-column: 3/4;
+    display: flex;
+    justify-content: space-around;
+    padding:35px
+}
+.bio-hero{
+    padding-top: 10px;
+}
+nav{
+   
+    flex-direction: column;
+}
+ footer {
+    display: flex;
+    flex-direction: column;
+    height:auto
 }
 .modal-content {
     width: 100%;
