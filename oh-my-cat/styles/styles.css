@@ -330,6 +330,10 @@ nav{
     flex-direction: column;
     height:auto
 }
+.links{
+    display: flex;
+    flex-direction: column;
+}
 .modal-content {
     width: 100%;
   }
