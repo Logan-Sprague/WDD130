@@ -252,6 +252,43 @@ footer a:hover{
         color: #301c0f ;
         margin: 10px;
     }
+    .shenanigans-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .shenanigans-hero{
+        font-size: 40px;
+        color: #301c0f;
+    }
+    .shenanigans-grid h2{
+        font-size: 35px;
+        font-family: "Indie Flower";
+        color: #301c0f;
+        margin: 10px;
+    }
+    .shenanigans-grid p{
+        font-size: 30px;
+        font-family: "josefin Sans", sans-serif;
+        color: #301c0f ;
+        margin: 10px;
+    }
+    .activities{
+        display: flex;
+        flex-direction: column;
+    }
+    .dog{
+        display: flex;
+        flex-direction: column;
+    }
+    .shenanigans-grid img{
+        border: solid 5px #3F826D;
+        margin-top: 10px; 
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;   
+    }
+
   @keyframes zoom {
     from {transform:scale(0)}
     to {transform:scale(1)}
@@ -336,5 +373,9 @@ nav{
 }
 .modal-content {
     width: 100%;
+  }
+  .shenanigans-grid{
+    display: flex;
+    flex-direction: column;
   }
 }
