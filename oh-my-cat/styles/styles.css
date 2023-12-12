@@ -274,14 +274,24 @@ footer a:hover{
         font-family: "josefin Sans", sans-serif;
         color: #301c0f ;
         margin: 10px;
+    
     }
     .activities{
         display: flex;
         flex-direction: column;
     }
+    .activities p{
+        padding-right: 20px;
+    }
     .dog{
         display: flex;
         flex-direction: column;
+    }
+    .dog h2{
+        padding-left: 20px;
+    }
+    .dog p{
+        padding-left: 20px;
     }
     .shenanigans-grid img{
         border: solid 5px #3F826D;
@@ -312,7 +322,7 @@ footer a:hover{
     text-decoration: none;
     cursor: pointer;
   }
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1100px){
 .home-grid{
     display: block;
     height: auto;
